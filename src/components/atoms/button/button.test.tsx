@@ -1,6 +1,4 @@
 import { fireEvent, render, screen } from '@testing-library/react'
-import { Button } from './button'
+// import { Button } from './button'
 
-describe('Button', () => {
-
-})
+describe('Button', () => {})
