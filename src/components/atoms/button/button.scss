@@ -1,0 +1,12 @@
+@use '../../../utils/globals/variables' as v;
+
+.button {
+    border-radius: 0;
+    padding: 1em 3em;
+    &--primary {
+        background-color: v.$primary;
+    }
+    &--secondary {
+        background-color: v.$secondary;
+    }
+}

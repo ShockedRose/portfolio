@@ -1,7 +1,12 @@
 import './app.scss'
+import { Button } from './components/atoms/button/button'
 
 function App() {
-  return <div className="app"></div>
+  return (
+    <>
+      <Button text="texto" type="secondary" />
+    </>
+  )
 }
 
 export default App
