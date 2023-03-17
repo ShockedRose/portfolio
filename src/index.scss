@@ -1,4 +1,6 @@
 @use 'utils/globals/variables';
+@use 'utils/globals/layout';
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
 
 html {
   box-sizing: border-box;
@@ -8,17 +10,15 @@ html {
 *:before,
 *:after {
   box-sizing: inherit;
+  font-family: inherit;
 }
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Space Mono', monospace, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: variables.$primary;
-
+  background-color: variables.$primary
 }
 
 code {

@@ -1,11 +1,21 @@
 @use '../../../utils/globals/variables' as v;
 
 .button {
+    transition: all cubic-bezier(.4, 0, .2, 1) .15s;
     border-radius: 0;
-    padding: 1em 3em;
+    padding: 0.8em 2.4em;
+    font-size: 1rem;
+    box-shadow: 0 0 #0000, 7px 7px;
+    width: 100%;
+
+    &:hover {
+        box-shadow: 0 0 #0000;
+    }
+
     &--primary {
         background-color: v.$primary;
     }
+
     &--secondary {
         background-color: v.$secondary;
     }
