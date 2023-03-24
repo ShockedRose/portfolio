@@ -1,9 +1,6 @@
 import './app.scss'
-import { Button } from './components/atoms/button/button'
 import { Header } from './components/organisms/header/header'
-import { Hero } from './components/template/hero/hero'
-import { APP } from './utils/constants/app-constant'
-import heroImage from './assets/images/hero-image.svg'
+import { HomePage } from './components/pages/home/home'
 import logo from './assets/images/logo.svg'
 
 function App() {
@@ -17,16 +14,7 @@ function App() {
   return (
     <>
       <Header logo={{ alt: 'Rose logo', url: logo }} links={navLinks} />
-      <Hero
-        title={APP.TITLE}
-        subtitle={APP.SUB_TITLE}
-        img={{ url: heroImage, alt: 'Hero vector image of a screen' }}
-        actionSection={
-          <div className="w-half">
-            <Button text="READ MORE" type="secondary" onClick={() => {}} />
-          </div>
-        }
-      />
+      <HomePage />
     </>
   )
 }

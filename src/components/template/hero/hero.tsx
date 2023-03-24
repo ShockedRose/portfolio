@@ -13,12 +13,12 @@ export const Hero: FC<HeroProps> = ({ actionSection, img, title, subtitle }) => 
     <section className="hero">
       <div className="hero__main">
         <div className="hero__action">
-          <h1>{title}</h1>
-          {subtitle && <p>{subtitle}</p>}
+          <h1 className="hero__title">{title}</h1>
+          {subtitle && <p className="hero__description">{subtitle}</p>}
           {actionSection}
         </div>
-        <div className="hero__image">
-          <img src={img.url} alt={img.alt} />
+        <div className="hero__image-container">
+          <img src={img.url} alt={img.alt} className="hero__image" />
         </div>
       </div>
     </section>

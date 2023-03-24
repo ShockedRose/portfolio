@@ -1,5 +1,6 @@
 import './header.scss'
 import { FC } from 'react'
+import classNames from 'classnames'
 
 interface HeaderProps {
   logo: {
@@ -11,17 +12,23 @@ interface HeaderProps {
 }
 
 export const Header: FC<HeaderProps> = ({ logo, fixed = true, links }) => {
+  const headerClasses = classNames('header', {
+    'header--fixed': fixed
+  })
+
   return (
-    <section className="header">
+    <section className={headerClasses}>
       <div className="header__content">
         <div className="header__logo-container">
           <img src={logo.url} alt={logo.alt} className="header__logo" />
         </div>
         <nav className="header__nav">
-          <ul>
+          <ul className="header__nav-list">
             {links.map((link) => (
               <li>
-                <a href={link.url}>{link.text}</a>
+                <a href={link.url} className="header__nav-link">
+                  {link.text}
+                </a>
               </li>
             ))}
           </ul>

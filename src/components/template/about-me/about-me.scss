@@ -1,0 +1,18 @@
+@use '../../../utils/globals/variables' as v;
+
+.about-me {
+    @media (min-width: 768px) {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    &__title {}
+
+    &__sub-title {}
+
+    &__description {}
+
+    &__image-container {}
+
+    &__image {}
+}

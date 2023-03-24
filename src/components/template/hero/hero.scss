@@ -2,31 +2,57 @@
 
 .hero {
 
-
-
     &__main {
 
         max-width: 80%;
-        margin: 10vh auto;
+        padding-top: 10vh;
+        margin: 0 auto;
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
 
         @media (min-width: 768px) {
             justify-content: space-between;
+            align-items: stretch;
             flex-direction: row;
         }
     }
 
     &__action {
 
+        @media (min-width: 768px) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 1rem;
+        }
+    }
+    &__title {
 
-        @media (min-width: 768px) {}
+        @media (min-width: 768px) {
+            font-size: 2.8rem;
+            margin-bottom: 2rem;
+        }
+    }
+    &__description {
+
+        @media (min-width: 768px) {
+            font-size: 1.4rem;
+        }
     }
 
+    &__image-container {
+
+        @media (min-width: 768px) {
+            flex-grow: 1;
+        }
+    }
     &__image {
 
-        @media (min-width: 768px) {}
+        @media (min-width: 768px) {
+            height: auto;
+            width: 100%;
+        }
     }
 
 }

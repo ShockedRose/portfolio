@@ -1,0 +1,15 @@
+@use '../../../utils/globals/variables' as v;
+
+.home {
+
+
+    &__bordered-section {
+        border-left: 1px solid v.$black;
+        border-right: 1px solid v.$black;
+
+        @media (min-width: 768px) {
+            width: 80%;
+            margin: 2rem auto;
+        }
+    }
+}
