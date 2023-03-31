@@ -2,7 +2,14 @@ import { render, screen } from '@testing-library/react'
 import { AboutMe } from './about-me'
 
 describe('About Me template', () => {
-  const props = { subTitle: 'test subtitle' }
+  const props = {
+    subTitle: 'test subtitle',
+    description: (
+      <>
+        <p>test description</p>
+      </>
+    )
+  }
 
   it('shoud render', () => {
     render(<AboutMe {...props} />)
@@ -18,5 +25,12 @@ describe('About Me template', () => {
     const aboutsubTitle = screen.getByText('test subtitle')
 
     expect(aboutsubTitle).toBeInTheDocument()
+  })
+  it('shoud render a description section', () => {
+    render(<AboutMe {...props} />)
+
+    const description = screen.getByText('test description')
+
+    expect(description).toBeInTheDocument()
   })
 })

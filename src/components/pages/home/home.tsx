@@ -7,6 +7,7 @@ import { APP } from '../../../utils/constants/app-constant'
 import { SOCIALS } from '../../../utils/constants/socials-constant'
 import heroImage from '../../../assets/images/hero-image.svg'
 import { AboutMe } from '../../template/about-me/about-me'
+import { ActionDescription } from '../../molecules/action-description/action-description'
 
 export const HomePage: FC = () => {
   return (
@@ -23,7 +24,16 @@ export const HomePage: FC = () => {
       />
       <SocialsBand socials={SOCIALS} />
       <div className="home__bordered-section">
-        <AboutMe subTitle={APP.ABOUT_ME.SUB_TITLE} />
+        <AboutMe
+          subTitle={APP.ABOUT_ME.SUB_TITLE}
+          description={
+            <ActionDescription
+              text={APP.ABOUT_ME.DESCRIPTION}
+              primaryAction={{ title: 'Contact me', command: () => {} }}
+              secondaryAction={{ title: 'More about me', command: () => {} }}
+            />
+          }
+        />
       </div>
     </main>
   )

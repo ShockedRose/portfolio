@@ -4,6 +4,8 @@ export const APP = {
 
   ABOUT_ME: {
     TITLE: 'ABOUT ME',
-    SUB_TITLE: 'SOFTWARE DEVELOPER'
+    SUB_TITLE: 'SOFTWARE DEVELOPER',
+    DESCRIPTION:
+      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate non architecto vero labore sapiente, esse facere officia! Molestiae nesciunt eveniet magni praesentium quisquam veritatis nisi, magnam molestias a quidem minus.'
   }
 }

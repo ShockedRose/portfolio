@@ -1,0 +1,24 @@
+@use '../../../utils/globals/variables' as v;
+
+.image-line {
+
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    height: 100%;
+
+    @media (min-width: 768px) {}
+
+    &__image-container {
+        text-align: center;
+        padding: 1rem;
+    }
+
+    &__image {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+
+
+}
