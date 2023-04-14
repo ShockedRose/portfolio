@@ -1,0 +1,28 @@
+@use '../../../utils/globals/variables' as v;
+
+.projects {
+
+
+    &__content {
+        display: grid;
+
+        @media (min-width: 768px) {
+            grid-template-columns: 1fr 1fr;
+        }
+
+    }
+
+    &__title {
+        font-size: 2.6rem;
+
+    }
+
+    &__description {}
+
+    &__action {
+        width: 50%;
+    }
+
+    &__carousel {}
+
+}

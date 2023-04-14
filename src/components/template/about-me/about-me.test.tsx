@@ -11,7 +11,7 @@ describe('About Me template', () => {
     )
   }
 
-  it('shoud render', () => {
+  it('should render', () => {
     render(<AboutMe {...props} />)
 
     const aboutMeTitle = screen.getByText('ABOUT ME')
@@ -19,14 +19,14 @@ describe('About Me template', () => {
     expect(aboutMeTitle).toBeInTheDocument()
   })
 
-  it('shoud display a subtitle', () => {
+  it('should display a subtitle', () => {
     render(<AboutMe {...props} />)
 
     const aboutsubTitle = screen.getByText('test subtitle')
 
     expect(aboutsubTitle).toBeInTheDocument()
   })
-  it('shoud render a description section', () => {
+  it('should render a description section', () => {
     render(<AboutMe {...props} />)
 
     const description = screen.getByText('test description')

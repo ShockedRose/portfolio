@@ -11,7 +11,7 @@ describe('Hero template', () => {
       }
     ]
   }
-  it('shoud render', () => {
+  it('should render', () => {
     render(<Header {...props} />)
 
     const header = screen.getByAltText('test logo')
@@ -19,7 +19,7 @@ describe('Hero template', () => {
     expect(header).toBeInTheDocument()
   })
 
-  it('shoud display the link options', () => {
+  it('should display the link options', () => {
     render(<Header {...props} />)
 
     const header = screen.getByText('Home')

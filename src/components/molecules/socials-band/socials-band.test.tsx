@@ -12,7 +12,7 @@ describe('Socials Band molecule', () => {
     ]
   }
 
-  it('shoud render', () => {
+  it('should render', () => {
     render(<SocialsBand {...props} />)
 
     const githubLogo = screen.getByAltText('github logo')

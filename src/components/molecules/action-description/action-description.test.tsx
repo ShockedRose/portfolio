@@ -8,7 +8,7 @@ describe('Action Description molecule', () => {
     secondaryAction: { title: 'secondary', command: jest.fn() }
   }
 
-  it('shoud render', () => {
+  it('should render', () => {
     render(<ActionDescription {...props} />)
 
     const actionDescription = screen.getByText('huge test description')
@@ -16,7 +16,7 @@ describe('Action Description molecule', () => {
     expect(actionDescription).toBeInTheDocument()
   })
 
-  it('shoud have both primary and secondary actions', () => {
+  it('should have both primary and secondary actions', () => {
     render(<ActionDescription {...props} />)
 
     const primaryButton = screen.getByText('primary')

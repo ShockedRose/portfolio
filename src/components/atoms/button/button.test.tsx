@@ -8,7 +8,7 @@ describe('Button Atom', () => {
     onClick: jest.fn()
   }
 
-  it('shoud render', () => {
+  it('should render', () => {
     render(<Button {...props} />)
 
     const button = screen.getByRole('button', { name: props.text })
@@ -16,7 +16,7 @@ describe('Button Atom', () => {
     expect(button).toBeInTheDocument()
   })
 
-  it('shoud handle a click action', () => {
+  it('should handle a click action', () => {
     render(<Button {...props} />)
 
     const button = screen.getByRole('button', { name: props.text })

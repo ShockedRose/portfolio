@@ -11,6 +11,13 @@ interface ImageLineProps {
 }
 
 export const ImageLine: FC<ImageLineProps> = ({ images }) => {
+  if (!images.length)
+    return (
+      <>
+        <p>No Images</p>
+      </>
+    )
+
   const containerHeight = `${100 / images.length}%`
 
   return (

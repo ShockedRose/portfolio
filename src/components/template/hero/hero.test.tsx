@@ -9,7 +9,7 @@ describe('Hero template', () => {
     subtitle: 'test subtitle'
   }
 
-  it('shoud render', () => {
+  it('should render', () => {
     render(<Hero {...props} />)
 
     const heroTitle = screen.getByText(props.title)
@@ -17,7 +17,7 @@ describe('Hero template', () => {
     expect(heroTitle).toBeInTheDocument()
   })
 
-  it('shoud display an action section', () => {
+  it('should display an action section', () => {
     render(<Hero {...props} />)
 
     const heroTitle = screen.getByRole('button', { name: 'a test button' })

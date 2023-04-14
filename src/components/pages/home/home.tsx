@@ -8,6 +8,8 @@ import { SOCIALS } from '../../../utils/constants/socials-constant'
 import heroImage from '../../../assets/images/hero-image.svg'
 import { AboutMe } from '../../template/about-me/about-me'
 import { ActionDescription } from '../../molecules/action-description/action-description'
+import { LabelSection } from '../../template/label-section/label-section'
+import { Projects } from '../../organisms/projects/projects'
 
 export const HomePage: FC = () => {
   return (
@@ -34,6 +36,10 @@ export const HomePage: FC = () => {
             />
           }
         />
+        <LabelSection label={APP.PROJECTS.TITLE} labelPosition="left">
+          <Projects title={APP.PROJECTS.TITLE} />
+        </LabelSection>
+        
       </div>
     </main>
   )
