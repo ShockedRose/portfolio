@@ -1,6 +1,5 @@
 import './action-description.scss'
 import { FC } from 'react'
-import { motion } from 'framer-motion'
 import { Button } from '../../atoms/button/button'
 
 interface ActionDescriptionProps {

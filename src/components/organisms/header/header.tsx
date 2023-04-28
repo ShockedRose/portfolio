@@ -26,9 +26,7 @@ export const Header: FC<HeaderProps> = ({ logo, fixed = true, links }) => {
           <ul className="header__nav-list">
             {links.map((link) => (
               <li key={link.text}>
-                <a href={link.url} className="header__nav-link">
-                  {link.text}
-                </a>
+                <a className="header__nav-link">{link.text}</a>
               </li>
             ))}
           </ul>

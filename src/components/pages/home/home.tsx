@@ -10,6 +10,7 @@ import { AboutMe } from '../../template/about-me/about-me'
 import { ActionDescription } from '../../molecules/action-description/action-description'
 import { LabelSection } from '../../template/label-section/label-section'
 import { Projects } from '../../organisms/projects/projects'
+import { projects } from '../../../utils/constants/projects-constants'
 
 export const HomePage: FC = () => {
   return (
@@ -37,9 +38,12 @@ export const HomePage: FC = () => {
           }
         />
         <LabelSection label={APP.PROJECTS.TITLE} labelPosition="left">
-          <Projects title={APP.PROJECTS.TITLE} />
+          <Projects
+            title={APP.PROJECTS.TITLE}
+            action={{ title: APP.PROJECTS.ACTION, command: () => {} }}
+            projects={projects}
+          />
         </LabelSection>
-        
       </div>
     </main>
   )
