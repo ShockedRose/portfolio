@@ -10,7 +10,9 @@ import { AboutMe } from '../../template/about-me/about-me'
 import { ActionDescription } from '../../molecules/action-description/action-description'
 import { LabelSection } from '../../template/label-section/label-section'
 import { Projects } from '../../organisms/projects/projects'
-import { projects } from '../../../utils/constants/projects-constants'
+import { projects } from '../../../utils/constants/projects-constant'
+import { Testimonials } from '../../template/testimonials/testimonials'
+import { testimonials } from '../../../utils/constants/testimonials-constant'
 
 export const HomePage: FC = () => {
   return (
@@ -44,6 +46,7 @@ export const HomePage: FC = () => {
             projects={projects}
           />
         </LabelSection>
+        <Testimonials description={APP.TESTIMONIALS.DESCRIPTION} testimonials={testimonials} />
       </div>
     </main>
   )

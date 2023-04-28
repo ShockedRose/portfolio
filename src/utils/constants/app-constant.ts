@@ -15,6 +15,8 @@ export const APP = {
     ACTION: 'See Projects'
   },
   TESTIMONIALS: {
-    TITLE: 'Testimonials'
+    TITLE: 'Testimonials',
+    DESCRIPTION:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident omnis aperiam molestias amet odio! Amet ducimus quas dolorum vero magni labore accusamus, quis ullam iste! Saepe ducimus laboriosam totam distinctio?'
   }
 }
